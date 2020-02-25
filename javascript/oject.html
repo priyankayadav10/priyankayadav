@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var obj = {
+        name: "vaishu",
+        age: 25,
+        arr: ["chem", "math", "bio", "phy"],
+        add: {
+          city: "pune",
+          Hno: 12,
+          landmark: "Karvenagar",
+          state : "Mh"
+        }
+      };
+
+        for (var x in obj) {
+       // console.log("value of : isArray", Array.isArray(obj[x]));
+
+        if (Array.isArray(obj[x])) {
+          for (var p of obj[x]) {
+            document.write("<br> " + p);
+          }
+        } else if (typeof obj[x] == "Object") {
+          for (var m in obj[x]) {
+            var a = obj[x];
+            document.write("<br> " + a[m]);
+          }
+        } else {
+          document.write("<br>" + obj[x]);
+         // console.log(typeof obj[x]);
+        }
+      }
+    </script>
+  </body>
+</html>

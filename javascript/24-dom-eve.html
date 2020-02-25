@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../img/img1.jpg" width="600" id="bigImg"/> <br/>
+    <img src="../img/img2.jpg" width="300" id="smallImg1" onclick="changeImg(this)"/>
+    <img src="../img/img3.jpg" width="300" id="smallImg2" onclick="changeImg(this)" />
+    <img src="../img/img4.jpg" width="300" id="smallImg3" onclick="changeImg(this)" />
+    <script>
+        function changeImg(Img){
+          //console.log("value is :", Img);
+          var orgimg = document.getElementById("bigImg").src;
+           document.getElementById("bigImg").src = Img.src;
+           document.getElementById(Img.id).src = orgimg;
+        }
+    </script>
+</body>
+</html>

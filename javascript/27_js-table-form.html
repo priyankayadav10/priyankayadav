@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="fname"/> <br>
+        <input type="text" id="lname"/> <br>
+        <input type="text" id="cname"/> <br>
+        <input type="text" id="iage"/> <br>
+        <input type="color" id="ucolor"/>
+        <input type="button" value="send" onclick="sendData()" />
+
+    </form>
+    <table>
+        <tr>
+            <th colspan="2">User Data</th>
+        </<tr>
+        <tr>
+        <td>Firstaname :</td>
+        <td id="firstname"></td>
+        </tr>
+        <tr>
+            <td>Lastname :</td>
+            <td id="lastname"></td>
+        </tr>
+        <tr>
+            <td>Cityname :</td>
+            <td id="cityname"></td>
+        </tr>
+        <tr>
+        <td>age :</td>
+        <td id="uage"></td>
+    </tr>
+    <tr>
+        <td>Color :</td>
+        <td id="choosecolor"></td>
+    </tr>
+    </table>
+    <script>
+    function sendData(){
+        var fname = document.getElementById("fname").value;
+        document.getElementById("firstname").innerHTML = fname;
+
+        var lname = document.getElementById("lname").value;
+        document.getElementById("lastname").innerHTML = lname;
+
+        var cname = document.getElementById("cname").value;
+        document.getElementById("cityname").innerHTML = cname;
+
+        var iage = document.getElementById("iage").value;
+        document.getElementById("uage").innerHTML= iage;
+
+        var ucolor = document.getElementById(ucolor).color;
+        document.getElementById("choosecolor").innerHTML = ucolor;
+    }
+    </script>
+</body>
+</html>

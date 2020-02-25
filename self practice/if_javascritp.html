@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>click the button to get a time-based greeting..!</p>
+    <button onclick="myFunction()">click Me</button>
+    <p id="Hello"></p>
+    <script>
+        // decalaration of function is not done
+        function myFunction(){
+            var greeting;
+            var time = new Date().getHours();
+            if(time < 10) {
+                greeting= "Good morning...!";
+            }
+            else if(time <20) {
+                greeting= "Good afternoon..!";
+            }
+            else {
+                greeting= "Good evening....!";
+            }
+            document.getElementById("Hello").innerHTML = greeting;
+            }
+    </script>
+</body>
+</html>

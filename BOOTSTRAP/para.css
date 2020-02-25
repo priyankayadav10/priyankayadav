@@ -1,0 +1,37 @@
+ html{ 
+scroll-behavior: smooth;
+}
+h1{
+    border: 1px solid yellow  ;
+    color: chartreuse;
+
+}
+.cls {
+    border: 1px solid red;
+    height: 450px;
+}
+.body-background {
+    background-image: url(../img/img_chania.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#div3,#div5,#div7,#div9{
+    background-color: rgba(0,1, 2,0.4);
+}
+#div1, #div9{
+    height:200px;
+}
+/* .menu{ 
+    position: fixed;
+} */
+.menu li{
+    color: springgreen;
+    display: inline;
+    background-color: white;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 6px black;
+    
+}

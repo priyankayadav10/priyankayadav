@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [ "math", "bio" , "chem"];
+        console.log("value of : arr.length",  arr.length);
+
+        for (var i= 0; i < arr.length; i++){
+            document.write("<br>" + arr[i]);
+        }
+        document.write("<hr>");
+         
+         for(var j of arr){
+             document.write("<br>" + j);
+         }
+         document.write("<hr>");
+
+          var obj ={
+              name : "priya",
+              age : 24
+          };
+         for(var k in obj){
+          console.log("value of : k", k);
+          document.write("<br>" + obj[k]);
+         };
+         document.write("<hr>");
+         
+         var data = {
+             name : "priya",
+             age: 24 ,
+             city : "mumbai",
+             marks : "99%",
+             subs :["chem", "bio", "math"]
+         };
+
+         for(var x in data){
+             console.log("value of : isArray", Array.isArray(data[x]));
+           
+           if(Array.isArray(data[x])){
+               for(var p of data[x]){
+                   document.write("<br> value of arr : " + p);
+               }
+           } else{
+               document.write("<br>" + data[x]);
+           }
+
+          }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+             url("../img/love image.jpg");
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center;
+             width: 100%;
+             height: 100vh;
+             position: relative;
+            
+        }
+        header{
+            /*width: 100%; */ 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn
+        {
+            width: 75%;
+            margin: 10px;
+            position:fixed;
+        }
+        #Lovevalue{
+            width: 25%;
+            margin: 10px;
+            /* position: absolute; */
+            text-align: center;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+
+        <div class="card w-50, m-auto, text:center">
+            <div class="card-header bg-danger text-center">LOVE CALCULATOR</div>
+            <div class="card-body">
+             <form class="form-inline w-50 m-auto">
+                 <div class="form-group"> <br>
+                     <input type="text" name="" class="form-control text-center text-white" placeholder="Your Name">
+                    </div>
+                    <div><span class="pl-4 pr-4 text-center"> + </span></div>
+                    <div class="form-group">
+                        <input type="text" name="" class="form-control text-center"
+                         placeholder="Your love Name">
+                    </div>
+             </form>   
+             <br>
+             <div class="w-100 m-auto">
+                <button class="btn btn-success w-50" onclick="checklovepercentage()"> Click </button> <br>
+                <br> 
+               </div>
+               <br/>
+             <div>
+                 <input type="text" name="" id="lovevalue" class="form-contol text-center w-50 m-auto"
+                 placeholder="lovepercentage">
+             </div>
+            
+            </div>
+            <div class="card-footer">God bless your relationship</div>
+        </div>
+
+    </header>
+    <script>
+        function checklovepercentage(){
+            var lovedata = Math.random() * 100;
+            lovedata = Math.floor(lovedata);
+            document.getElementById('lovedata').value = lovedata + "%";
+        }
+    </script>
+
+</body>
+</html>

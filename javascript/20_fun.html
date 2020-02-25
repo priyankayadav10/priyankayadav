@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  function esuable code..*/
+     function sayHello(){
+     document.write("Hello priya....!");
+      }
+      sayHello();
+     
+     /* function with para.....*/
+    function say(name){
+     document.write("<br> Hello wlecome...!" + name + "...!");
+     }
+    say("ankita");
+    say("priya");
+    say("vaishu");
+
+
+    /* function with param and return..*/
+    function hello(num1, num2){
+      document.write("<br> result is :" + (num1 + num2) + " ....!");
+       return num1 + num2;
+  }  
+  var res1 = hello(10,20);
+  document.write("<br><b> res : " +res1 +"</b>");
+  var res2 = hello(50,80);
+  document.write("<br><i> res : " +res1 +"</i>");
+  var res3 = hello(30,90);
+  document.write("<br><mark> res : " +res1 +"</mark>");
+
+  /* annonymus function*/
+  var hello = function(){
+      document.write("<br>Hi there...!");
+  }
+  hello();
+    </script>
+</body>
+</html>

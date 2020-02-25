@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="firstname"/>
+        <input type="button" value="Show Data" onclick="submitData()"/>
+        <p>Hello,<span id="showfirstname"></span></p>
+
+        <script>
+            function submitData(){
+                var firstname = document.getElementById("firstname").value;
+                console.log(firstname);
+                document.getElementById("showfirstname").innerHTML = firstname;
+            }
+        </script>
+
+
+    </form>
+</body>
+</html>

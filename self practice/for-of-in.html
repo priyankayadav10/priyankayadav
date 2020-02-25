@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = {
+            name : "Piyu",
+            age : 24 ,
+            subs : ["math", "chem", "bio"],
+            isPass : true,
+            add : {
+                city : "Mumbai",
+                State : "MH"
+            }
+        };
+        for (var k in data) {
+        console.log("Val of: k", k);
+
+        if (typeof data[k] == "boolean") {
+          var res = "";
+          data[k] == true ? (res = "Pass") : (res = "Fail");
+          document.write("<br> Pass stat : " + res);
+        }
+        else if (Array.isArray(data[k])) {
+         for (var arrVals of data[k]) {
+        document.write("<br>Array values : " + arrVals);
+         }
+        } 
+        else if (typeof data[k] == "object") {
+         for (var val in data[k]) {
+           console.log("Val of: val", data[k][val]);
+           document.write("<br>Obj values : " + data[k][val]);
+          }
+        }
+         else {
+          document.write("<br> value : " + data[k]);
+         }
+        }
+    </script>
+</body>
+</html>

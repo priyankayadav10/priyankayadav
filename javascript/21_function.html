@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sayhello = function() {
+            document.write("hello there..!");
+        }
+        sayhello();
+
+        /*  Arrow function*/
+        var sayhello2 =() => document.write("<br>Hi anyone there..!");
+        sayhello2();
+
+        /* IIFE function*/
+        (function(){
+            document.write("<br>Hello piyu...!");
+        }
+        )();
+
+        /* ? function*/
+        function sum(){
+            return function(){
+                document.write("<br>We are in inner function..!");
+            };
+          }
+          sum()();
+         // console.log("value of : sum(), " sum());
+    </script>
+</body>
+</html>

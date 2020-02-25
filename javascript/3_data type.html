@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name="priya"
+        document.write("Welcome " + name);
+
+        var names = ["priya", "ankita", "shital"]
+        document.write("<br> Names from array :" + names);
+        console.log("value of : names ", names);
+        console.table(names);
+        document.write("<br> Name from Array : " + names[1]);
+
+        var sData ={
+            name:"priya",
+            no: 10,
+            isPass: false
+        };
+        document.write("<br> Name from object : " + sData.name + "<br> No from object :" + sData.no +
+         "<br> Result is :" + (sData.isPass ? "pass" : "fail"));
+        
+        console.table(sData);
+
+    </script>
+</body>
+</html>

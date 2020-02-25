@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id ="demo" type = "text">
+    <button type = "button" onclick="myFunction()">Text here..</button>
+    <h2>Java script Range error</h2>
+    <p>You can not set the number of significant digits of a number to 500..!</p>
+     <script>
+         function myFunction(){
+        var num = 10;
+        try {
+            num.toPrecision(500);
+        }
+         }
+        catch(err){
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+</body>
+</html>
