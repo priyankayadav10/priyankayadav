@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+               function fun1(val) { 
+             $("#img1").show(val,2000);
+             $("#drop1").fadeToggle("slow");
+             }
+     </script>
+</head>
+<body>
+    <select id="drop1" onchange="fun1(this.value)">
+    <option>blind</option>
+    <option>exlpode</option>
+    <option>bounce</option>
+    <option>clip</option>
+    <option>drop</option>
+    <option>fade</option>
+    <option>highlight</option>
+    <option>puff</option>
+    <option>pulsate</option>
+    <option>scale</option>
+    <option>shake</option>
+    <option>size</option>
+    <option>slide</option>
+    </select>
+    <br> <br>
+    <img src="../img/images (1).jpg" width="200px" id="img1" style ="display:none">
+</body>
+</html>

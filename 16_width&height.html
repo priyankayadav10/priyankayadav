@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+         $("button").click(function(){
+             var txt= " ";
+             txt +="Width of div: "+ $("#div1").width() + "<br/>";
+             txt +="Height of div: "+ $("#div1").height();
+             $("#div1").html(txt);
+         });
+     });
+    </script>
+    <style>
+   #div1{
+      height: 400px;
+      width: 300px;
+      padding: 10px;
+      margin: 3px;
+      border: 1px solid chartreuse;
+      background-color: cornflowerblue;
+   }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <button>Display dimension of div</button>
+    <p>Width() - rteurns the width of the element.</p>
+    <p>Height() - returns the height of the element.</p>
+</body>
+</html>

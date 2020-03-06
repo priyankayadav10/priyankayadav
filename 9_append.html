@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").append("<b>Here is new fruit is adding..</b>");
+        });
+        $("#btn2").click(function(){
+            $("ol").append("<li>Custerdapple</li>");
+        });
+    });
+    </script>
+</head>
+<body>
+    <p>This is the list of fruits..!</p>
+    <p>In summer for your health you have to eat the fruits..!</p>
+    <ol>
+        <li>Mango</li>
+        <li>Strawberry</li>
+        <li>Apple</li>
+    </ol>
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append List items</button>
+</body>
+</html>

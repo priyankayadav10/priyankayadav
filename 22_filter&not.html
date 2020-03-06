@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").filter(".intro").css("background-color","red");
+            $("p").not(".i").css("background-color","blue");
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to my Homepage</h1>
+    <p>My name is priyanka yadav</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="intro">I love my mom & dad.</p>
+    <p class="i">My best friend is Ankita</p>
+</body>
+</html>
