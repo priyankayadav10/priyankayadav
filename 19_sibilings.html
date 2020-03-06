@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .siblings * {
+        display: block;
+        margin: 15px;
+        padding: 5px;
+        border: 2px solid chocolate;
+        color:crimson;
+    }
+    </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+       $(document).ready(function(){
+           $("h2").nextUntil("h6").css({"color": "red", "border": "2px solid red"});
+       });
+      </script>
+</head>
+<body class="siblings">
+    <div> Div(Parent)
+        <p>P</p>
+        <span>Span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+        <p>P</p>
+    </div>
+</body>
+</html>
