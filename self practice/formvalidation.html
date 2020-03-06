@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        Name : <input type="text" id="name"/> <br/>
+        Password : <input type="password" id="pass" name="password"/><br/>
+        Gender : <input type="checkbox" id="Gen" /><br/>
+        <label>Gender :</label>
+        <option>Select your gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+         
+        <input type="submit" value="register" onclick="sendData()"/>
+    </form>
+    <script>
+        function sendData(){
+            var name = document.getElementById('name').value;
+            console.log(name);
+            var password = document.getElementById('pass').value;
+            var gender = document.getElementById('Gen').value;
+        
+            
+            if(name == null || name ==""){
+                alert("Name can't be blank");
+                return false;
+            }
+            else if(password.length<6){
+                alert("password must be at least 6 characters long..");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

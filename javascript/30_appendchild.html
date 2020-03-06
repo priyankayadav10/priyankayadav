@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="p1">Hello ...is there anyone..</div>
+    <div id="p2">Hey...</div>
+    <script>
+        var new1 = document.createElement('h2');
+        var node = document.createTextNode("Hii piyu...!");
+        new1.appendChild(node);
+        var curr = document.getElementById("p2");
+        curr.appendChild(new1);
+    </script>
+</body>
+</html>

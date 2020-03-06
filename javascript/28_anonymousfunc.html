@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //------Anonymous function------//
+        // var sayHello = function(){
+        //     document.write("Hello world....!");
+        // }
+        // sayHello();
+
+        //---anonymous function with para...//
+       // var sayHello = function(name){
+        //     document.write("Hello..." + name+"....!");
+        // }
+        // sayHello("Piyu");
+
+        //---arrow function ---//
+        // var sayHello  = (name, age) => document.write("<br> Hello" +name+"<br>age is"+ age+"..!");
+        // sayHello("piyu", 24);
+
+        //---IIFE function----
+        //  (function(name){
+        //      document.write("Hello" +name+"....!")
+        //  })("Sai");
+        //---function inside function --
+        var oneVar = function(){
+            return function(){
+                document.write("Hello there...!");
+            };
+        };
+        oneVar()();
+    </script>
+</body>
+</html>

@@ -3,56 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel = "stylesheet" type = "text/css" href="calculator.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" 
-    rel="stylesheet"/>
-    <title>A Simple Calculator</title>
+    <title>Document</title>
+    <style>
+        .btn{
+            border: 1px solid silver;
+            width: 25px;
+            text-align: center;
+            padding: 1px;
+            margin: 2px;
+            box-shadow: 3px 3px 3px silver;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+            background-image: url('../img/img(1).jpg');
+        }
+        .btn:active{
+            box-shadow: 1px 2px 2px black;
+        }
+        #input{
+            width: 132px;
+            border-radius: 1%;
+            box-shadow: 2px 2px 2px silver;
+            margin: 2px;
+            
+        }
+    </style>
 </head>
 <body>
-    <!-- <h1> Simple Calculator..</h1> -->
-    <div id = "container">
-        <div id = "calculator">
-            <div id = "result">
-           
-             <div id = "histroy">
-                    <p id="history-value"></p>
-                </div>
-                <div id="output">
-                    <p id="output-value"></p>
-                </div>
-                <div id = "keyboard">
-                    <button class="operator" 
-                    id="clear">C</button>
-                    <button class="operator" 
-                    id="backspace">CE</button>
-                    <button class="operator" id="%">%</button>
-                    <button class="operator" id="/">&#247;
-                    </button>
-                    <button class="number" id="7">7</button>
-                    <button class="number" id="8">8</button>
-                    <button class="number" id="9">9</button>
-                    <button class="operator" id="*">&times;
-                   </button>
-                   <button class="number" id="4">4</button>
-                   <button class="number" id="5">5</button>
-                   <button class="number" id="6">6</button>
-                   <button class="operator" id="-">-</button>
-                   <button class="number" id="1">1</button>
-                   <button class="number" id="2">2</button>
-                   <button class="number" id="3">3</button>
-                   <button class="operator" id="+">+</button>
-                   <button class="empty" id="empty"></button>
-                   <button class="number" id="0">0</button>
-                   <button class="empty" id="empty"></button>
-                   <button class="operator" id="=">=</button>
-                </div>
-                
-        </div>
-    </div>
-    </div>
-    <script src ="calculator.js"></script>
+    <script>
+        function sendValue(num){
+            var oldInput = 0;
+            oldInput = document.getElementById("input").value;
+            document.getElementById("input").value = oldInput + num;
+        }
+        function calcVal(){
+            oldInput = document.getElementById("input").value;
+            var output = eval(oldInput);
+            console.log("Val of : output", output);
+            document.getElementById("input").value = output;
+        }
+    </script>
+    <input id="input" /> <br/>
+    <div class="btn" onclick="document.getElementById('input').value=''" 
+    style="width: 61px;">
+    Clr</div> 
+    <div class="btn" onclick="sendValue('%')">%</div>
+    <div class="btn" onclick="sendValue('/')">/</div>
 
+     <br/>
+    <div class="btn" onclick="sendValue(7)">7</div>
+    <div class="btn" onclick="sendValue(8)">8</div>
+    <div class="btn" onclick="sendValue(9)">9</div>
+    <div class="btn" onclick="sendValue('*')">*</div>
+    <br/>
+    <div class="btn" onclick="sendValue(4)">4</div>
+    <div class="btn" onclick="sendValue(5)">5</div>
+    <div class="btn" onclick="sendValue(6)">6</div>
+    <div class="btn" onclick="sendValue('-')">-</div>
+    <br/>
+    <div class="btn" onclick="sendValue(1)">1</div>
+    <div class="btn" onclick="sendValue(2)">2</div>
+    <div class="btn" onclick="sendValue(3)">3</div>
+    <div class="btn" onclick="sendValue('+')">+</div>
+    <br/> 
+    <div class="btn" onclick="sendValue(0)">0</div>
+    <div class="btn" onclick="sendValue('.')">.</div>
+    <div class="btn" onclick="calcVal()" style="width: 63px;">=</div>
 </body>
 </html>

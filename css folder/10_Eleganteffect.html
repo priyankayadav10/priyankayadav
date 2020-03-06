@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+           
+        }
+        .main{
+            background-image: url(../img/car.jpg);
+            height: 500px;
+            background-size: 1200px;
+            }
+            .cm{
+                background-image: url(../img/car.jpg);
+                box-shadow: 0px 0px 5px black ;
+                position: absolute;
+                background-size: 1425px;
+                width: 200px;
+            }
+        #d1{
+            height: 400px;
+            left: 0px;
+            background-position: 0px -150px;
+            top: 150px;
+            
+        }
+        #d2{
+            height: 500px;
+            top: 100px;
+            left: 150px;
+            background-position:-150px -100px;
+        
+        }
+        #d3
+        {
+            height: 600px;
+            top: 50px;
+            left: 300px;
+            background-position:-300px -50px;
+        
+        }
+        #d4{
+            height: 800px;
+            top: 0px;
+            left: 450px;
+            background-position:-450px 0px;
+            
+        }
+        #d5{
+            height: 600px;
+            top: 50px;
+            left: 600px;
+            background-position:-600px -50px;
+            z-index: -1;
+            }
+            #d6{
+                height: 500px;
+                top: 100px;
+                left: 750px;
+                background-position: -750px -100px;
+                z-index: -2;
+            }
+            #d7 {
+                height: 400px;
+                left: 900px;
+                top: 150px;
+                background-position: -900px -150px;
+                z-index: -3;
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="d1" class="cm"></div>
+        <div id="d2" class="cm"></div>
+        <div id="d3" class="cm"></div>
+        <div id="d4" class="cm"></div>
+        <div id="d5" class="cm"></div>
+        <div id="d6" class="cm"></div>
+        <div id="d7" class="cm"></div>
+    </div>
+</body>
+</html>

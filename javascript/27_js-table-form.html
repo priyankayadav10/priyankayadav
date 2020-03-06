@@ -12,14 +12,21 @@
         <input type="text" id="lname"/> <br>
         <input type="text" id="cname"/> <br>
         <input type="text" id="iage"/> <br>
-        <input type="color" id="ucolor"/>
-        <input type="button" value="send" onclick="sendData()" />
+        <input type="color" id="ucolor"/> <br>       
+        
+        Your Gender: <input type="radio" name="gender" value="Male" id="M1"> Male
+        <input type="radio" name="gender" value="Female" id="F1"> Female <br>
+        <input type="button" value="send" onclick="sendData()" /> 
+        <input type="button" value="Reset" />
+
+
+
 
     </form>
     <table>
         <tr>
             <th colspan="2">User Data</th>
-        </<tr>
+        </tr>
         <tr>
         <td>Firstaname :</td>
         <td id="firstname"></td>
@@ -40,6 +47,11 @@
         <td>Color :</td>
         <td id="choosecolor"></td>
     </tr>
+     <tr>
+         <td>Gender</td>
+         <td id="M2"></td>
+     </tr>
+    
     </table>
     <script>
     function sendData(){
@@ -55,8 +67,14 @@
         var iage = document.getElementById("iage").value;
         document.getElementById("uage").innerHTML= iage;
 
-        var ucolor = document.getElementById(ucolor).color;
+        var ucolor = document.getElementById("ucolor").value;
         document.getElementById("choosecolor").innerHTML = ucolor;
+
+        var M1 = document.querySelector('input[name="gender"]:checked').value;
+        document.getElementById("M2").innerHTML = M1;
+       
+
+      
     }
     </script>
 </body>
